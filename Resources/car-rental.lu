@@ -1,12 +1,12 @@
-﻿> # Intent definitions
+> # Intent definitions
 
 ## CarRental
 - I want to rent a {Car=Mercedes}?
 - I want to rent a {Car=Mercedes} in munich?
 - I am looking to rent a {CarType=caravan}
 - are there any cars for rent in florida?
-- are there cars that cost less then 20 euros per day?
-- please find me a car that costs more then 200 euros.
+- are there cars that cost less than 20 euros per day?
+- please find me a car that costs more than 200 euros.
 - I need to rent a car for tomorrow.
 
 ## None
