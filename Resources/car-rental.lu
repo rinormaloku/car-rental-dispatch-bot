@@ -1,0 +1,30 @@
+﻿> # Intent definitions
+
+## CarRental
+- I want to rent a {Car=Mercedes}?
+- I want to rent a {Car=Mercedes} in munich?
+- I am looking to rent a {CarType=caravan}
+- are there any cars for rent in florida?
+- are there cars that cost less then 20 euros per day?
+- please find me a car that costs more then 200 euros.
+- I need to rent a car for tomorrow.
+
+## None
+- what is this
+- can I do here something
+- please explain this to me
+
+> # Entity definitions
+$Car:simple
+$CarType:simple
+
+> # PREBUILT Entity definitions
+$PREBUILT:money
+$PREBUILT:geographyV2
+
+> # List entities
+
+$Operation:rent=
+- lease
+- rental
+- hire
