@@ -21,15 +21,15 @@ qnamaker create kb --in cognitiveModels/car-bot.qna --subscriptionKey <NotSubKey
 
 4. Add the information to the bot.
 
-```
+```bash
 msbot connect luis --name CarRental --appId <AppId> --version 0.1 --authoringKey <AuthKey> -b CarRentalDispatchBot.bot
-msbot connect qna --name CarQnA --kbId <KbID> --subscriptionKey <NotSubKey> --endpointKey <EndpointKey> --hostname <Host> -b CarRentalDispatchBot.bot
+# alternative using stdin
+qnamaker get kb --kbId <kbId> --subscriptionKey <NotSubKey> --msbot | msbot connect qna --stdin
 ```
 
 5. Create the dispatch luis app
 ```
-dispatch create -b CarRentalDispatchBot.bot
-msbot connect dispatch --name CarRentalDispatch --appId <AppId> --version 0.1 --authoringKey <AuthKey> -b CarRentalDispatchBot.bot
+dispatch create -b CarRentalDispatchBot.bot | msbot connect dispatch --stdin
 ```
 
 6. Add Regions for Luis apps in the .Bot file.
